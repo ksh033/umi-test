@@ -6,7 +6,7 @@
   ],
   "scripts": {
     
-    "build": "father-build ",
+    "build": "father-build",
     "build:dev": "father-build --watch",
     "start": "cross-env APP_ROOT=packages/web max dev"
   },
