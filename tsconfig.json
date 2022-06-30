@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "paths": {
+
+      "sc-h5sdk": ["./packages/h5skd/src/index.tsx"],
+      "clientplugin": ["./packages/clientplugin/src/index.tsx"],
+    }
+  },
+  "exclude": [""],
+  "include": [
+    "**/src/**/*",
+    "**/docs/**/*",
+    "scripts/**/*",
+    "**/example/**/*",
+    ".eslintrc.js",
+    "tests",
+    "jest.config.js",
+    "**/fixtures",
+    "./tests/no-duplicated.ts",
+    "packages/element/BindEventUtil.ts"
+    
+  ],
+  "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]
+}

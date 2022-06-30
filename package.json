@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    
+    "build": "father-build ",
+    "build:dev": "father-build --watch",
+    "start": "cross-env APP_ROOT=packages/web max dev"
+  },
+  "dependencies": {
+    "@umijs/max": "^4.0.2",
+    "@ant-design/pro-components":"^1.1.6"
+  },
+  "devDependencies": {
+    "father-build": "^1.18.1",
+    "cross-env":"^7.0.3"
+  }
+
+}
